@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./media/logo.jpg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet" />
+
+    <title>Prime Dental Clinic</title>
+  </head>
+
+  <body class="bg-white text-black dark:bg-gray-950 dark:text-white flex flex-col justify-center items-center gap-20 fonts-tajawal-regular">
+    <!-------------------------------------------- Navbar -------------------------------------------->
+    <nav class="w-full min-h-16 z-30 p-3 sticky top-0 bg-blue-900 text-white dark:bg-gray-950 dark:text-blue-500 flex justify-between items-center gap-5">
+      <div id="nav" class="flex flex-row-reverse xl:flex-row justify-between items-center gap-5 container mx-auto">
+        <ul id="n-list" class="hidden xl:flex justify-between items-center gap-3 text-xl">
+          <a id="n-home" href="#" class="hover:cursor-pointer hover:font-bold px-1">Home</a>
+          <a id="n-aboutus" href="#aboutus" class="hover:cursor-pointer hover:font-bold px-1">About us</a>
+          <a id="n-services" href="#services" class="hover:cursor-pointer hover:font-bold px-1">Services</a>
+          <a id="n-reviews" href="#reviews" class="hover:cursor-pointer hover:font-bold px-1">Reviews</a>
+          <a id="n-contactus" href="#contactus" class="hover:cursor-pointer hover:font-bold px-1">Contact us</a>
+        </ul>
+        <img src="./media/logo.jpg" alt="logo" class="h-16 aspect-square fixed start-1/2 translate-x-1/2 translate-y-1/2 rounded-full scale-150 border-2 border-blue-900 dark:border-gray-950" />
+        <div id="n-btns" class="flex justify-center items-center gap-5">
+          <a href="./index.html" class="text-xl font-bold py-1 px-2 bg-white text-blue-900 dark:bg-blue-500 dark:text-gray-950 rounded-lg">العربية</a>
+          <button id="toggle-theme" class="text-xl bi bi-brightness-high-fill"></button>
+        </div>
+      </div>
+    </nav>
+
+    <section id="header" class="w-full -mt-20 flex flex-col justify-center items-center opacity-0">
+      <img src="./media/banner.jpeg" class="object-cover" />
+      <div class="w-full flex justify-center items-center gap-20">
+        <div class="w-1/5 -translate-y-1/2 rounded-lg overflow-hidden shadow-lg">
+          <img src="./media/img2.jpg" class="object-cover" />
+        </div>
+        <div class="w-1/5 -translate-y-1/2 rounded-lg overflow-hidden shadow-lg">
+          <img src="./media/img1.jpg" class="object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutus" class="scroll-m-32 container mx-auto flex flex-col justify-center items-center gap-10 fonts-tajawal-medium">
+      <h2 class="mx-auto text-center font-bold text-5xl border-x-8 border-blue-800 rounded-lg px-5 text-blue-800">About Prime Dental Clinic</h2>
+      <pre class="mx-auto text-center text-3xl fonts-tajawal-medium whitespace-pre-line">
+        Work Time
+        SAT - THU
+        9 AM - 11 PM</pre
+      >
+      <div class="w-full flex flex-col lg:flex-row-reverse justify-center items-center gap-10">
+        <video class="w-full lg:w-1/3 aspect-video rounded-lg shadow-lg" controls>
+          <source src="./media/video2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="w-full lg:w-1/3 text-xl text-center">
+          <h3 class="text-2xl text-blue-800 mb-3 fonts-tajawal-black">Prime Dental Clinic (ASWAN)</h3>
+        </div>
+      </div>
+      <div class="w-full flex flex-col lg:flex-row justify-center items-center gap-10">
+        <video class="w-full lg:w-1/3 aspect-video rounded-lg shadow-lg" controls>
+          <source src="./media/video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="w-full lg:w-1/3 text-xl text-center">
+          <h3 class="text-2xl text-blue-800 mb-3 fonts-tajawal-black">Accredited by the General Authority for Accreditation and Health Control (GAHAR)</h3>
+          <p class="">
+            The General Authority for Accreditation and Health Supervision, headed by Dr. Ahmed Taha, announced in an official statement today the latest decisions of the Supreme Accreditation Committee, where Dar Al Fouad Hospital in Cairo and Aswan Specialized Eye Hospital in Aswan obtained GAHAR accreditation for a period of 3 years, after evaluating the health services in these hospitals according to the accreditation standards issued by the Authority and obtained international accreditation
+            from (ESCWA).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="scroll-m-32 container mx-auto p-5 rounded-lg flex flex-col justify-center items-center gap-10 fonts-tajawal-medium">
+      <h2 class="mx-auto text-center font-bold text-5xl border-x-8 border-blue-800 rounded-lg px-5 text-blue-800">Services</h2>
+
+      <ul class="w-full flex flex-wrap justify-center items-center gap-10 text-2xl">
+        <li class="w-full lg:w-1/3 2xl:w-1/4 text-center py-4 rounded-lg shadow-lg hover:scale-110 duration-300 border-b-8 border-blue-600 bg-blue-900 text-white">Fillings</li>
+        <li class="w-full lg:w-1/3 2xl:w-1/4 text-center py-4 rounded-lg shadow-lg hover:scale-110 duration-300 border-b-8 border-blue-600 bg-blue-900 text-white">Endodontics</li>
+        <li class="w-full lg:w-1/3 2xl:w-1/4 text-center py-4 rounded-lg shadow-lg hover:scale-110 duration-300 border-b-8 border-blue-600 bg-blue-900 text-white">Removable & Fixed Prosthodontics</li>
+        <li class="w-full lg:w-1/3 2xl:w-1/4 text-center py-4 rounded-lg shadow-lg hover:scale-110 duration-300 border-b-8 border-blue-600 bg-blue-900 text-white">Pedo Clinic</li>
+        <li class="w-full lg:w-1/3 2xl:w-1/4 text-center py-4 rounded-lg shadow-lg hover:scale-110 duration-300 border-b-8 border-blue-600 bg-blue-900 text-white">Teeth Whitening</li>
+        <li class="w-full lg:w-1/3 2xl:w-1/4 text-center py-4 rounded-lg shadow-lg hover:scale-110 duration-300 border-b-8 border-blue-600 bg-blue-900 text-white">Simple / Surgical Extraction</li>
+        <li class="w-full lg:w-1/3 2xl:w-1/4 text-center py-4 rounded-lg shadow-lg hover:scale-110 duration-300 border-b-8 border-blue-600 bg-blue-900 text-white">Scaling and Polishing</li>
+        <li class="w-full lg:w-1/3 2xl:w-1/4 text-center py-4 rounded-lg shadow-lg hover:scale-110 duration-300 border-b-8 border-blue-600 bg-blue-900 text-white">Removal of Stains</li>
+      </ul>
+    </section>
+
+    <section id="reviews" class="scroll-m-32 container mx-auto p-5 rounded-lg flex flex-col justify-center items-center gap-10 fonts-tajawal-medium">
+      <h2 class="mx-auto text-center font-bold text-5xl border-x-8 border-blue-800 rounded-lg px-5 text-blue-800">Reviews</h2>
+      <div class="w-full flex flex-col lg:flex-row justify-center items-center gap-10">
+        <img src="./media/r1.jpg" alt="review" class="w-full lg:w-1/3 aspect-square object-cover rounded-lg shadow-lg" />
+        <img src="./media/r2.jpg" alt="review" class="w-full lg:w-1/3 aspect-square object-cover rounded-lg shadow-lg" />
+      </div>
+    </section>
+
+    <section id="contactus" class="scroll-m-32 container mx-auto p-5 rounded-lg flex flex-col justify-center items-center gap-10 fonts-tajawal-medium">
+      <h2 class="mx-auto text-center font-bold text-5xl border-x-8 border-blue-800 rounded-lg px-5 text-blue-800">Contact us</h2>
+      <div class="w-full flex flex-wrap justify-center items-center gap-10 text-xl fonts-tajawal-medium" dir="ltr">
+        <div class="border-l-8 border-emerald-500 text-emerald-500 rounded-lg py-3 px-5 flex justify-center items-center gap-5">
+          <i class="bi bi-telephone-fill"></i>
+          <p class="text-2xl fonts-tajawal-bold">01111 33 8461</p>
+        </div>
+        <div class="border-l-8 border-red-500 text-red-500 rounded-lg py-3 px-5 flex justify-center items-center gap-5">
+          <i class="bi bi-envelope-at"></i>
+          <p class="text-xl lg:text-2xl fonts-tajawal-bold">PrimeDentalMas@gmail.com</p>
+        </div>
+        <a href="http://wa.me/+201111338461" target="_blank" class="border-l-8 border-green-500 text-green-500 rounded-lg py-3 px-5 flex justify-center items-center gap-5">
+          <i class="bi bi-whatsapp"></i>
+          <p class="text-2xl fonts-tajawal-bold">WhatsApp</p>
+        </a>
+        <a href="https://www.instagram.com/primedentalmas/?fbclid=IwZXh0bgNhZW0CMTAAAR3wcAX459Bh-gDGFxrC44uJIWjcnWYpWyz1cxGG51Vvrrh4ScGm6bjBMq0_aem_rEaswUuejBqrCCx9ArUurA" target="_blank" class="border-l-8 border-purple-500 text-purple-500 rounded-lg py-3 px-5 flex justify-center items-center gap-5">
+          <i class="bi bi-instagram"></i>
+          <p class="text-2xl fonts-tajawal-bold">Instagram</p>
+        </a>
+        <a href="https://www.facebook.com/primedentalmas" target="_blank" class="border-l-8 border-blue-500 text-blue-500 rounded-lg py-3 px-5 flex justify-center items-center gap-5">
+          <i class="bi bi-facebook"></i>
+          <p class="text-2xl fonts-tajawal-bold">Facebook</p>
+        </a>
+      </div>
+      <div class="w-full lg:w-1/2">
+        <iframe class="w-full aspect-square rounded-lg shadow-lg" src="https://www.google.com/maps/place/Prime+Dental+Clinic+%D8%A8%D8%B1%D8%A7%D9%8A%D9%80%D9%85+%D9%84%D8%B7%D8%A8+%D8%A7%D9%84%D8%A3%D8%B3%D9%86%D8%A7%D9%86%E2%80%AD/@24.0843593,32.9003303,17z/data=!3m1!4b1!4m6!3m5!1s0x1436657e1a1ee893:0x643a1e75fdac0b46!8m2!3d24.0843544!4d32.8977554!16s%2Fg%2F11l6bn5f3f" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <footer class="w-full min-h-16 p-3 bg-blue-900 text-white dark:text-gray-950 flex justify-center items-center gap-5">
+      <span class="text-xl fonts-tajawal-bold">&copy 2020-2024</span>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
